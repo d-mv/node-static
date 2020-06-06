@@ -5,10 +5,11 @@
   "main": "server/index.ts",
   "scripts": {
     "dev": "ts-node-dev ./server/index.ts",
-    "start": "NODE_DEV=production ts-node ./server/index.ts"
+    "start": "NODE_DEV=production ts-node ./server/index.ts",
+    "lint": "eslint --ext .ts,.tsx server"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Dmitry Melnikov",
+  "license": "MIT",
   "devDependencies": {
     "@types/compression": "^1.7.0",
     "@typescript-eslint/eslint-plugin": "^3.1.0",
@@ -24,6 +25,7 @@
     "eslint-plugin-markdown": "^1.0.2",
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-promise": "^4.2.1",
+    "husky": "^4.2.5",
     "prettier": "^2.0.5",
     "ts-node-dev": "^1.0.0-pre.44"
   },
